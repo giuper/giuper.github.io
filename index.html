@@ -60,9 +60,19 @@ and Cryptography. Salerno, October-December 2020.
 <b>Recent Papers</b>
 <ul>
 <li>
+<i>Efficient Boolean Search over Encrypted Data with Reduced Leakage</i>
+<a href=https://eprint.iacr.org/2021/1227>ASIACRYPT 21.</a>
+[<a href="javascript:toggle('abstract2');">Show/Hide abstract</a>]
+<div class="abstract" id="abstract2" style="display:none;">
+We study encrypted storage schemes where a client outsources data to an untrusted third-party server (such as a cloud storage provider) while maintaining the ability to privately query and dynamically update the stored data. We focus on encrypted multi-maps, a structured encryption (STE) scheme that stores pairs of label and value tuples that have several important applications (most notably, to searchable encryption and encrypted SQL databases). Encrypted multi-maps support queries for specific labels that return the associated value tuple. As responses are variable-length, encrypted multi-maps are subject to volume leakage attacks introduced by Kellaris et al. [CCS’16] with several follow-up works (including Grubbs et al. [CCS’18] and Lacharite et al. [SP’18]). To prevent these attacks, volume-hiding encrypted multi-maps were introduced by Kamara and Moataz [Eurocrypt’19] that hide the volume of labels (i.e., the size of the associated value tuple).
+
+As our main contribution, we present the first fully dynamic constructions of volume-hiding encrypted multi-maps that are both asymptotically and concretely efficient. Furthermore, our constructions simultaneously provide forward and backward privacy that are the de-facto standard security notions for dynamic STE schemes (Stefanov et al. [NDSS’14] and Bost [CCS’16]). Additionally, we implement our schemes to showcase their concrete efficiency. Our experimental evaluations show that our constructions are able to add dynamicity with minimal to no additional cost compared to the prior best static volume-hiding schemes of Patel et al. [CCS’20].
+</div>
+
+<li>
 <i> Lower Bounds for Encrypted Multi-Maps and Searchable Encryption in the Leakage Cell Probe Mode</i>.
-<a href=https://eprint.iacr.org/2019/1132>ePrint 2019-1132</a>.
-Accepted to CRYPTO 20. [<a href="javascript:toggle('abstract1');">Show/Hide abstract</a>]
+<a href=https://eprint.iacr.org/2019/1132>CRYPTO 20.</a> 
+[<a href="javascript:toggle('abstract1');">Show/Hide abstract</a>]
 
 <p>
 <div class="abstract" id="abstract1" style="display:none;">
