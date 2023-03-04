@@ -58,7 +58,7 @@ and Cryptography. Salerno, October-December 2020.
 <li>
 Going to <a href=https://eurocrypt.iacr.org/2022/>Eurocrypt 2022</a> in Trondheim, Norway. [<a href=https://github.com/giuper/talks/blob/master/Technical/anamorphic.pdf>Slides</a>]
 <li>Teaching at the <a href=https://sites.google.com/uniurb.it/fosad/home/fosad-2022>FOSAD School</a>, August 29-September 2, 2022, 
-in beatiful Bertinoro.
+in beautiful Bertinoro.
 </ul>
 
 <hr>
@@ -86,7 +86,16 @@ We continue along this line of work and present the first logarithmic lower boun
 We also address an unfortunate issue with this rich line of work where the lower bound techniques are difficult to use and require customization for each new result. To make the techniques more accessible, we generalize our proofs into a framework that reduces proving logarithmic lower bounds to showing that a specific problem satisfies two simple, minimal conditions. We show our framework is easy-to-use as all the lower bounds in our paper utilize the framework and hope our framework will spur more usage of these lower bound techniques.
 
 </div>
+<li>
+<i>Secure Selections on Encrypted Multi-writer Streams</i>
+<a href=https://doi.org/10.1145/3485470>ACM Transactions on Privacy and Security</a>
+<br>
+[<a href="javascript:toggle('abstract4');">Show/Hide abstract</a>]
+<div class="abstract" id="abstract4" style="display:none;">
+Performing searches over encrypted data is a very current and active area. Several efficient solutions have been provided for the single-writer scenario in which all sensitive data originate with one party (the Data Owner) that encrypts and uploads the data to a public repository. Subsequently, the Data Owner accesses the encrypted data through a Query Processor, which has direct access to the public encrypted repository. Motivated by the recent trend in pervasive data collection, we depart from this model and consider a multi-writer scenario in which the data originate with several and mutually untrusted parties, the Data Sources. In this new scenario, the Data Owner provides public parameters so that each Data Source can add encrypted items to the public encrypted stream; moreover, the Data Owner keeps some related secret information needed to generate tokens so that different Query Sources can decrypt different subsets of the encrypted stream, as specified by corresponding access policies.
 
+We propose security model for this problem that we call Secure Selective Stream (SSS) and give a secure construction for it based on hard problems in Pairing-Based Cryptography. The cryptographic core of our construction is a new primitive, Amortized Orthogonality Encryption, that is crucial for the efficiency of the proposed implementation for SSS.
+</div>
 <li>
 <i>Anamorphic Encryption: Private Communication against a Dictator</i>.
 <a href=https://ia.cr/2022/639>Eurocrypt 2022</a>
