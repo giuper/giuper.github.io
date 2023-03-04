@@ -65,6 +65,20 @@ in beatiful Bertinoro.
 <b>Recent Papers</b>
 <ul>
 <li>
+<i>Lower Bound Framework for Differentially Private and Oblivious Data Structures</i>.
+<a href=https://ia.cr/2022/1553>Eurocrypt 2023</a>
+<br>
+[<a href="javascript:toggle('abstract4');">Show/Hide abstract</a>]
+<div class="abstract" id="abstract4" style="display:none;">
+In recent years, there has been significant work in studying data structures that provide privacy for the operations that are executed. These primitives aim to guarantee that observable access patterns to physical memory do not reveal substantial information about the queries and updates executed on the data structure. Multiple recent works, including Larsen and Nielsen [Crypto'18], Persiano and Yeo [Eurocrypt'19], Hubáček et al. [TCC'19] and Komargodski and Lin [Crypto'21], have shown that logarithmic overhead is required to support even basic RAM (array) operations for various privacy notions including obliviousness and differential privacy as well as different choices of sizes for RAM blocks  and memory cells .
+<p>
+We continue along this line of work and present the first logarithmic lower bounds for differentially private RAMs (DPRAMs) that apply regardless of the sizes of blocks  and cells . This is the first logarithmic lower bounds for DPRAMs when blocks are significantly smaller than cells, that is . Furthermore, we present new logarithmic lower bounds for differentially private variants of classical data structure problems including sets, predecessor (successor) and disjoint sets (union-find) for which sub-logarithmic plaintext constructions are known. All our lower bounds extend to the multiple non-colluding servers setting.
+<p>
+We also address an unfortunate issue with this rich line of work where the lower bound techniques are difficult to use and require customization for each new result. To make the techniques more accessible, we generalize our proofs into a framework that reduces proving logarithmic lower bounds to showing that a specific problem satisfies two simple, minimal conditions. We show our framework is easy-to-use as all the lower bounds in our paper utilize the framework and hope our framework will spur more usage of these lower bound techniques.
+
+</div>
+
+<li>
 <i>Anamorphic Encryption: Private Communication against a Dictator</i>.
 <a href=https://ia.cr/2022/639>Eurocrypt 2022</a>
 <br>
