@@ -98,8 +98,8 @@ We also address an unfortunate issue with this rich line of work where the lower
 <a href=https://doi.org/10.1145/3485470>ACM Transactions on Privacy and Security</a>, v. 25, no. 1, 
 with Angelo Massimo Perillo and Alberto Trombetta.
 <br>
-[<a href="javascript:toggle('abstract4');">Show/Hide abstract</a>]
-<div class="abstract" id="abstract4" style="display:none;">
+[<a href="javascript:toggle('abstractTPS');">Show/Hide abstract</a>]
+<div class="abstract" id="abstractTPS" style="display:none;">
 Performing searches over encrypted data is a very current and active area. Several efficient solutions have been provided for the single-writer scenario in which all sensitive data originate with one party (the Data Owner) that encrypts and uploads the data to a public repository. Subsequently, the Data Owner accesses the encrypted data through a Query Processor, which has direct access to the public encrypted repository. Motivated by the recent trend in pervasive data collection, we depart from this model and consider a multi-writer scenario in which the data originate with several and mutually untrusted parties, the Data Sources. In this new scenario, the Data Owner provides public parameters so that each Data Source can add encrypted items to the public encrypted stream; moreover, the Data Owner keeps some related secret information needed to generate tokens so that different Query Sources can decrypt different subsets of the encrypted stream, as specified by corresponding access policies.
 
 We propose security model for this problem that we call Secure Selective Stream (SSS) and give a secure construction for it based on hard problems in Pairing-Based Cryptography. The cryptographic core of our construction is a new primitive, Amortized Orthogonality Encryption, that is crucial for the efficiency of the proposed implementation for SSS.
