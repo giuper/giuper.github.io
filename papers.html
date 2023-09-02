@@ -10,10 +10,13 @@
 
 <h1>Papers by subject</h1>
 
-<h3>The lower bound papers</h3>
+<h2>The lower bound papers</h2>
 In this sequence of papers, we look at the intrinsinc complexity of 
 oblivios data structures with a special focus on ORAMs and PIR.
 
+<h3>Background</h3>
+<ul>
+<li>
 The first lower bound on ORAMs was given by 
 <a href=https://dl.acm.org/doi/pdf/10.1145/28395.28416>Goldreich</a> in 
 the first 1987 paper on ORAMs (see also <a href=https://dl.acm.org/doi/pdf/10.1145/233551.233553>Goldreich and Ostrovsky</a>).
@@ -21,18 +24,24 @@ The lower bound was in the balls-and-bins model in which each logical
 block of data was seen as an indivisible and opaque blob of data.
 And it holds also for the offline case.
 
+<li>
 <a href=https://www.wisdom.weizmann.ac.il/~naor/PAPERS/oram_lower.html>Boyle and Naor</a> showed that removing the balls-and-bins restriction on the lower bound for the offline case would give a result on sorting circuit complexity.
 
+<li>
 <a href=https://link.springer.com/chapter/10.1007/978-3-319-96881-0_18>Larsen and Nielsen</a> removed the ball-and-bins restriction for 
 online ORAMs and proved that an ORAM consisting on <i>n</i>
 <i>b</i>-bit blocks implemented on a server with <i>w</i>-bit words 
 requires slowdown proportional to at least <i>b/w log(n/c)</i>.
+<li>
 <a hfef=https://doi.org/10.1007/978-3-030-36033-7_10>Hubáček, Koucký, Král,
 and Slívová</a> had the same lower bound with respect to a weaker
 adversary. 
+</ul>
 
 
-<ol>
+<h3>The papers</h3>
+
+<ul>
 
 <li>With Kevin Yeo, 
 in <a href=https://link.springer.com/chapter/10.1007/978-3-030-17653-2_14>Eurocrypt 2019</a>, we obtain the same lower bound for the weaker notion of 
@@ -72,4 +81,4 @@ computationally secure PIR with public preprocessing
 improving the previous result of
 <a href=https://link.springer.com/article/10.1007/s00145-004-0134-y>Beimel, Ishai and Malkin</a>.
 
-<ul>
+</ul>
