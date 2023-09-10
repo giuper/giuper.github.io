@@ -65,7 +65,6 @@ and Cryptography. Salerno, October-December 2020.
 <li> Attending the <a href=https://cryptolowerbounds.wordpress.com/>Lower Bounds in Cryptography</a> workshop. Bertinoro, July 7-12, 2019.
 <li> Attending the <a href=https://sigmod2019.org/>ACM SIGMOD/PODS</a> conference. Amsterdam, June 30-July 5, 2019.
 <li> Attending the <a href=https://icerm.brown.edu/topical_workshops/tw19-1-es/>ICERM workshop on Encrypted Search</a>. Providence, RI, June 10-14, 2019.
-
 </ul>
 
 <hr>
@@ -76,8 +75,8 @@ and Cryptography. Salerno, October-December 2020.
 <a href=https://doi.org/10.56553/popets-2023-0025>PETS 23,</a>
 with Ghous Amjad, Sarvar Patel, Kevin Yeo, and Moti Yung.
 <br>
-[<a href="javascript:toggle('abstract4');">Show/Hide abstract</a>]
-<div class="abstract" id="abstract4" style="display:none;">
+[<a href="javascript:toggle('abstract7');">Show/Hide abstract</a>]
+<div class="abstract" id="abstract7" style="display:none;">
 We study encrypted storage schemes where a client outsources data to an untrusted third-party server (such as a cloud storage provider) while maintaining the ability to privately query and dynamically update the data. We focus on encrypted multi-maps (EMMs), a structured encryption (STE) scheme that stores pairs of label and value tuples. EMMs allow queries on labels and return the associated value tuple. As responses are variable-length, EMMs are subject to volume leakage attacks introduced by Kellaris et al. [CCS'16]. To prevent these attacks, volume-hiding EMMs were introduced by Kamara and Moataz [Eurocrypt'19] that hide the label volumes (i.e., the value tuple lengths). As our main contribution, we present the first fully dynamic volume-hiding EMMs that are both asymptotically and concretely efficient. Furthermore, they are simultaneously forward and backward private which are the de-facto standard security notions for dynamic STE schemes. Additionally, we implement our schemes to showcase their concrete efficiency. Our experimental evaluations show that our constructions are able to add dynamicity with minimal to no additional cost compared to the prior best static volume-hiding schemes of Patel et al. [CCS'19].
 </div>
 
@@ -85,8 +84,8 @@ We study encrypted storage schemes where a client outsources data to an untruste
 <i>Lower Bound Framework for Differentially Private and Oblivious Data Structures</i>.
 <a href=https://ia.cr/2022/1553>Eurocrypt 2023,</a> with Kevin Yeo.
 <br>
-[<a href="javascript:toggle('abstractL');">Show/Hide abstract</a>]
-<div class="abstract" id="abstractL" style="display:none;">
+[<a href="javascript:toggle('abstract6');">Show/Hide abstract</a>]
+<div class="abstract" id="abstract6" style="display:none;">
 In recent years, there has been significant work in studying data structures that provide privacy for the operations that are executed. These primitives aim to guarantee that observable access patterns to physical memory do not reveal substantial information about the queries and updates executed on the data structure. Multiple recent works, including Larsen and Nielsen [Crypto'18], Persiano and Yeo [Eurocrypt'19], Hubáček et al. [TCC'19] and Komargodski and Lin [Crypto'21], have shown that logarithmic overhead is required to support even basic RAM (array) operations for various privacy notions including obliviousness and differential privacy as well as different choices of sizes for RAM blocks  and memory cells .
 <p>
 We continue along this line of work and present the first logarithmic lower bounds for differentially private RAMs (DPRAMs) that apply regardless of the sizes of blocks  and cells . This is the first logarithmic lower bounds for DPRAMs when blocks are significantly smaller than cells, that is . Furthermore, we present new logarithmic lower bounds for differentially private variants of classical data structure problems including sets, predecessor (successor) and disjoint sets (union-find) for which sub-logarithmic plaintext constructions are known. All our lower bounds extend to the multiple non-colluding servers setting.
@@ -99,8 +98,8 @@ We also address an unfortunate issue with this rich line of work where the lower
 <a href=https://doi.org/10.1145/3485470>ACM Transactions on Privacy and Security</a>, v. 25, no. 1, 
 with Angelo Massimo Perillo and Alberto Trombetta.
 <br>
-[<a href="javascript:toggle('abstractTPS');">Show/Hide abstract</a>]
-<div class="abstract" id="abstractTPS" style="display:none;">
+[<a href="javascript:toggle('abstract5');">Show/Hide abstract</a>]
+<div class="abstract" id="abstract5" style="display:none;">
 Performing searches over encrypted data is a very current and active area. Several efficient solutions have been provided for the single-writer scenario in which all sensitive data originate with one party (the Data Owner) that encrypts and uploads the data to a public repository. Subsequently, the Data Owner accesses the encrypted data through a Query Processor, which has direct access to the public encrypted repository. Motivated by the recent trend in pervasive data collection, we depart from this model and consider a multi-writer scenario in which the data originate with several and mutually untrusted parties, the Data Sources. In this new scenario, the Data Owner provides public parameters so that each Data Source can add encrypted items to the public encrypted stream; moreover, the Data Owner keeps some related secret information needed to generate tokens so that different Query Sources can decrypt different subsets of the encrypted stream, as specified by corresponding access policies.
 
 We propose security model for this problem that we call Secure Selective Stream (SSS) and give a secure construction for it based on hard problems in Pairing-Based Cryptography. The cryptographic core of our construction is a new primitive, Amortized Orthogonality Encryption, that is crucial for the efficiency of the proposed implementation for SSS.
@@ -110,8 +109,8 @@ We propose security model for this problem that we call Secure Selective Stream 
 <a href=https://ia.cr/2022/639>Eurocrypt 2022,</a>
 with Duong Hieu Phan and Moti Yung.
 <br>
-[<a href="javascript:toggle('abstractAna');">Show/Hide abstract</a>]
-<div class="abstract" id="abstractAna" style="display:none;">
+[<a href="javascript:toggle('abstract4');">Show/Hide abstract</a>]
+<div class="abstract" id="abstract4" style="display:none;">
 Cryptosystems have been developed over the years under the typical prevalent setting which assumes that the receiver’s key is kept secure from the adversary, and that the choice of the message to be sent is freely performed by the sender and is kept secure from the adversary as well. Under these fundamental and basic operational assumptions, modern Cryptography has flourished over the last half a century or so, with amazing achievements: New systems (including public-key Cryptography), beautiful and useful models (including security definitions such as semantic security), and new primitives (such as zero-knowledge proofs) have been developed. Furthermore, these fundamental achievements have been translated into actual working systems, and span many of the daily human activities over the Internet.
 
 However, in recent years, there is an overgrowing pressure from many governments to allow the government itself access to keys and messages of encryption systems (under various names: escrow encryption, emergency access, communication decency acts, etc.). Numerous non-direct arguments against such policies have been raised, such as "the bad guys can utilize other encryption system" so all other cryptosystems have to be declared illegal, or that "allowing the government access is an ill-advised policy since it creates a natural weak systems security point, which may attract others (to masquerade as the government)." It has remained a fundamental open issue, though, to show directly that the above mentioned efforts by a government (called here “a dictator” for brevity) which mandate breaking of the basic operational assumption (and disallowing other cryptosystems), is, in fact, a futile exercise. This is a direct technical point which needs to be made and has not been made to date.
