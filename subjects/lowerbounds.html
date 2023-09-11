@@ -1,74 +1,85 @@
-<h1>The lower bound papers</h1>
-In this sequence of papers, I look at the intrinsinc complexity of 
-oblivios data structures with a special focus on ORAM and PIR.
+    <section>
+    <script src="js/abstract.js" type="text/javascript"></script>
+    <h1>The lower bound papers</h1>
+    In this sequence of papers, I look at the intrinsinc complexity of 
+    oblivios data structures with a special focus on ORAM and PIR.
+    
+    <p>
+    
+    <h3>Background</h3>
+    <ul>
+    <li>
+    The first lower bound on ORAMs was given by 
+    <a href=https://dl.acm.org/doi/pdf/10.1145/28395.28416>Goldreich</a> in 
+    the first 1987 paper on ORAMs (see also 
+    <a href=https://dl.acm.org/doi/pdf/10.1145/233551.233553>Goldreich and Ostrovsky</a>).
+    The lower bound was in the balls-and-bins model in which each logical
+    block of data was seen as an indivisible and opaque blob of data.
+    And it holds also for the offline case.
+    
+    <li>
+    <a href=https://www.wisdom.weizmann.ac.il/~naor/PAPERS/oram_lower.html>Boyle and Naor</a> 
+    showed that removing the balls-and-bins restriction on the lower bound 
+    for the offline case would give a result on sorting circuit complexity.
+    
+    <li>
+    <a href=https://link.springer.com/chapter/10.1007/978-3-319-96881-0_18>Larsen and Nielsen</a> 
+    removed the ball-and-bins restriction for 
+    online ORAMs and proved that an ORAM consisting on <i>n</i>
+    <i>b</i>-bit blocks implemented on a server with <i>w</i>-bit words 
+    requires slowdown proportional to at least <i>b/w log(n/c)</i>.
 
-<p>
-
-<h3>Background</h3>
-<ul>
-<li>
-The first lower bound on ORAMs was given by 
-<a href=https://dl.acm.org/doi/pdf/10.1145/28395.28416>Goldreich</a> in 
-the first 1987 paper on ORAMs (see also <a href=https://dl.acm.org/doi/pdf/10.1145/233551.233553>Goldreich and Ostrovsky</a>).
-The lower bound was in the balls-and-bins model in which each logical
-block of data was seen as an indivisible and opaque blob of data.
-And it holds also for the offline case.
-
-<li>
-<a href=https://www.wisdom.weizmann.ac.il/~naor/PAPERS/oram_lower.html>Boyle and Naor</a> showed that removing the balls-and-bins restriction on the lower bound for the offline case would give a result on sorting circuit complexity.
-
-<li>
-<a href=https://link.springer.com/chapter/10.1007/978-3-319-96881-0_18>Larsen and Nielsen</a> removed the ball-and-bins restriction for 
-online ORAMs and proved that an ORAM consisting on <i>n</i>
-<i>b</i>-bit blocks implemented on a server with <i>w</i>-bit words 
-requires slowdown proportional to at least <i>b/w log(n/c)</i>.
-<li>
-<a hfef=https://doi.org/10.1007/978-3-030-36033-7_10>Hubáček, Koucký, Král,
-and Slívová</a> had the same lower bound with respect to a weaker
-adversary. 
-</ul>
-
-
-<h3>The papers</h3>
-
-<ul>
-
-<li>With Kevin Yeo, 
-in <a href=https://link.springer.com/chapter/10.1007/978-3-030-17653-2_14>Eurocrypt 2019</a>, we obtain the same lower bound for the weaker notion of 
-<i>(&epsilon;,&delta;)-differentially private</i> RAM, for constant &epsilon;.
-
-<li>With Kevin Yeo and Sarvar Patel, 
-in <a href=https://link.springer.com/chapter/10.1007/978-3-030-56784-2_15>Crypto 2020</a>, we show the same result for Symmetric Searchable Encryption 
-that leak the <i>decoupled key-equality pattern</i>; i.e.,
-the key-equality leakage between update and query operations is decoupled
-and the adversary only learns whether two operations of the <i>same type</i>
-are performed on the same key or not. Note that constant-slowdown SSE is possible if the adversary is allowed to learn whether a pair of read and write
-operation are performed on the same key.
-
-<li>With Kevin Yeo, 
-in <a href=https://link.springer.com/chapter/10.1007/978-3-031-30545-0_17>Eurocrypt 2023</a>,
-we provide a framework for proving lower bounds for differentially private
-and oblivious data structures.
-As a special case we prove the first non-trivial lower bound for
-differentially private RAMs that is independent of the size <i>b</i> of
-the logical blocks. Note that previous lower bound had a <i>b/w</i>
-multiplicative factor that made the bound trivial when <i>b</i> is 
-much larger than <i>w</i>.
-A similar result had been obtained by 
-<a href=https://doi.org/10.1007/978-3-030-84259-8_20>Komargodski and Lin</a>
-for the stronger notion of Oblivious RAM.
-
-<li>With Kevin Yeo, 
-in <a href=https://link.springer.com/chapter/10.1007/978-3-031-38551-3_6>CRYPTO 2023</a>,
-we prove that differentially private RAMs have the same slowdown even
-with respect to a transiente adversary that receives two memory snapshot
-and the transcript of one operation.
-
-<li>With Kevin Yeo, 
-in <a href=https://epubs.siam.org/doi/10.1137/1.9781611977073.99>SODA 22</a>,
-we prove a lower bound on the time/hint tradeoff of 
-computationally secure PIR with public preprocessing
-improving the previous result of
-<a href=https://link.springer.com/article/10.1007/s00145-004-0134-y>Beimel, Ishai and Malkin</a>.
-
-</ul>
+    <li>
+    <a hfef=https://doi.org/10.1007/978-3-030-36033-7_10>Hubáček, Koucký, 
+    Král, and Slívová</a> had the same lower bound with respect to a weaker
+    adversary. 
+    </ul>
+    
+    
+    <h3>The papers</h3>
+    <ul>
+    
+    <li>With Kevin Yeo, 
+    in <a href=https://link.springer.com/chapter/10.1007/978-3-030-17653-2_14>Eurocrypt 2019</a>, we obtain the same lower bound for the weaker notion of 
+    <i>(&epsilon;,&delta;)-differentially private</i> RAM, for constant &epsilon;.
+    
+    <li>With Kevin Yeo and Sarvar Patel, 
+    in <a href=https://link.springer.com/chapter/10.1007/978-3-030-56784-2_15>Crypto 2020</a>, 
+    we show the same result for Symmetric Searchable Encryption 
+    that leak the <i>decoupled key-equality pattern</i>; i.e.,
+    the key-equality leakage between update and query operations is 
+    decoupled and the adversary only learns whether two operations of the 
+    <i>same type</i> are performed on the same key or not.
+    Note that constant-slowdown SSE is possible if the adversary is allowed 
+    to learn whether a pair of read and write
+    operation are performed on the same key.
+    
+    <li>With Kevin Yeo, 
+    in <a href=https://link.springer.com/chapter/10.1007/978-3-031-30545-0_17>Eurocrypt 2023</a>,
+    we provide a framework for proving lower bounds for differentially 
+    private and oblivious data structures.
+    As a special case we prove the first non-trivial lower bound for
+    differentially private RAMs that is independent of the size <i>b</i> of
+    the logical blocks. Note that previous lower bound had a <i>b/w</i>
+    multiplicative factor that made the bound trivial when <i>b</i> is 
+    much larger than <i>w</i>.
+    A similar result had been obtained by 
+    <a href=https://doi.org/10.1007/978-3-030-84259-8_20>Komargodski and Lin</a>
+    for the stronger notion of Oblivious RAM.
+    
+    <li>With Kevin Yeo, 
+    in <a href=https://link.springer.com/chapter/10.1007/978-3-031-38551-3_6>CRYPTO 2023</a>,
+    we prove that differentially private RAMs have the same slowdown even
+    with respect to a transiente adversary that receives two memory snapshot
+    and the transcript of one operation.
+    
+    <li>With Kevin Yeo, 
+    in <a href=https://epubs.siam.org/doi/10.1137/1.9781611977073.99>SODA 22</a>,
+    we prove a lower bound on the time/hint tradeoff of 
+    computationally secure PIR with public preprocessing
+    improving the previous result of
+    <a href=https://link.springer.com/article/10.1007/s00145-004-0134-y>Beimel, Ishai and Malkin</a>.
+    
+    </ul>
+    </section>
+</div>
