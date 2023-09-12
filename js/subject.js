@@ -1,6 +1,7 @@
 function hide_all(){
     hide("lowerbounds");
 	hide("anamorphic");
+	hide("nizk");
 }
 
 function hide(DivId) {
