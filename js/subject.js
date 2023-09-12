@@ -13,8 +13,8 @@ function toggle(DivId){
 	if(ele.style.display == "none") {
         hide_all();
 		ele.style.display = "block";
-    }
-	else 
+    } else {
    		ele.style.display = "none";
+    }
 } 
 
