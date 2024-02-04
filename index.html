@@ -71,8 +71,20 @@ and Cryptography. Salerno, October-December 2020.
 <b>Recent Papers</b>
 <ul>
 <li>
+<i>Anamorphic Signatures: Secrecy from a Dictator Who Only Permits Authentication!</i>
+<a href=https://link.springer.com/chapter/10.1007/978-3-031-38545-2_25>CRYPTO 23,</a>
+with Miroslaw Kutylowski, Duong Hieu Phan, Moti Yung, and  Marcin Zawada:
+<br>
+[<a href="javascript:toggle('abstract9');">Show/Hide abstract</a>]
+<div class="abstract" id="abstract0" style="display:none;">
+The goal of this research is to raise technical doubts regarding the usefulness of the repeated attempts by governments to curb Cryptography (aka the “Crypto Wars”), and argue that they, in fact, cause more damage than adding effective control. The notion of Anamorphic Encryption was presented in Eurocrypt’22 for a similar aim. There, despite the presence of a Dictator who possesses all keys and knows all messages, parties can arrange a hidden “anamorphic” message in an otherwise indistinguishable from regular ciphertexts (wrt the Dictator).
+<br>
+In this work, we postulate a stronger cryptographic control setting where encryption does not exist (or is neutralized) since all communication is passed through the Dictator in, essentially, cleartext mode (or otherwise, when secure channels to and from the Dictator are the only confidentiality mechanism). Messages are only authenticated to assure recipients of the identity of the sender. We ask whether security against the Dictator still exists, even under such a strict regime which allows only authentication (i.e., authenticated/ signed messages) to pass end-to-end, and where received messages are determined by/ known to the Dictator, and the Dictator also eventually gets all keys to verify compliance of past signing. To frustrate the Dictator, this authenticated message setting gives rise to the possible notion of anamorphic channels inside signature and authentication schemes, where parties attempt to send undetectable secure messages (or other values) using signature tags which are indistinguishable from regular tags. We define and present implementation of schemes for anamorphic signature and authentication; these are applicable to existing and standardized signature and authentication schemes which were designed independently of the notion of anamorphic messages. Further, some cornerstone constructions of the foundations of signatures, in fact, introduce anamorphism.
+</div>
+
+<li>
 <i>Limits of Breach-Resistant and Snapshot-Oblivious RAMs.</i>
-<a href=https://link.springer.com/chapter/10.1007/978-3-031-38551-3_6>CRYPTO 24,</a>
+<a href=https://link.springer.com/chapter/10.1007/978-3-031-38551-3_6>CRYPTO 23,</a>
 with Kevin Yeo.
 <br>
 [<a href="javascript:toggle('abstract8');">Show/Hide abstract</a>]
@@ -84,6 +96,16 @@ the transcript of L consecutive operations from a single breach.
 For small values of L, this outperforms standard ORAMs.
 
 In this work, we tackle whether it is possible to further push this construction beyond a single breach. Unfortunately, we show that protecting against even slightly stronger snapshot adversaries becomes difficult. As our main result, we present an \Omega(log n)  lower bound for any ORAM protecting against a (3, 1)-snapshot adversary that performs three breaches and sees the transcript of only one query. In other words, our lower bound holds even if an adversary observes only memory contents during two breaches while managing to view the transcript of only one query in the other breach. Therefore, we surprisingly show that protecting against a snapshot adversary with three data breaches is as difficult as protecting against a persistent adversary.
+</div>
+
+<li>
+<i>The Self-Anti-Censorship Nature of Encryption: On the Prevalence of Anamorphic Cryptography.</i>
+<a href=https://petsymposium.org/popets/2023/popets-2023-0104.php>PETS 23,</a>
+with Miroslaw Kutylowski, Duong Hieu Phan, Moti Yung, and  Marcin Zawada:
+<br>
+[<a href="javascript:toggle('abstract10');">Show/Hide abstract</a>]
+<div class="abstract" id="abstract10" style="display:none;">
+As part of the responses to the ongoing crypto wars, the notion of Anamorphic Encryption was put forth. The notion allows private communication in spite of a dictator who is engaged in an extreme form of surveillance and or censorship, where it asks for all private keys and knows and may even dictate all messages. The original work pointed out efficient ways to use two known schemes in the anamorphic mode, bypassing the draconian censorship and hiding information from the all-powerful dictator. A question left open was whether these examples are outlier results or whether anamorphic mode is pervasive in existing systems. Here we answer the above question: we develop new techniques, expand the notion, and show that the notion of Anamorphic Cryptography is, in fact, very much prevalent. We first refine the notion of Anamorphic Encryption with respect to the nature of covert communication. Specifically, we distinguish Single-Receiver Encryption for many to one communication, and Multiple-Receiver Encryption for many to many communication within the group of conspiring users. We then show that Anamorphic Encryption can be embedded in the randomness used in the encryption, and we give families of constructions that can be applied to numerous ciphers. In total the families cover classical encryption schemes, some of which in actual use. Among our examples is an anamorphic channel with much higher capacity than the regular channel. In sum, the work shows the very large extent of the potential futility of control and censorship over the use of strong encryption by the dictator (typical for and even stronger than governments engaging in the ongoing crypto-wars): While such limitations obviously hurt utility which encryption typically brings to safety in computing systems, they essentially, are not helping the dictator. While the actual implications of what we show here and what it means in practice require further policy and legal analyses and perspectives, the technical aspects regarding the issues are clearly showing the futility of the war against Cryptography.
 </div>
 
 <li>
