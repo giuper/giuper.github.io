@@ -51,6 +51,28 @@ My main research area is Theoretical Computer Science with a special focus on Cr
 <b>Recent Papers</b>
 <ul>
 <li>
+<i>Differentially Private Set Representations</i>. 
+<a href=https://papers.nips.cc/paper_files/paper/2024/hash/94ffbc2939e18adac36eedf8d38d1ef3-Abstract-Conference.html>NeurIPS 24</a>, 
+with Sarvar Patel, Joon Young Seo, and Kevin Yeo
+[<a href="javascript:toggle('abstract12');">Show/Hide abstract</a>]
+<div class="abstract" id="abstract12" style="display:none;">
+We study the problem of differentially private (DP) mechanisms for 
+representing sets of size <i>k</i> from a large universe.
+Our first construction creates (&epsilon;,&delta;)-DP representations with 
+error probability of 1 /(e^&epsilon;+1) using space at most 
+<i>1.05 k&epsilon;log(e)</i> bits where
+the time to construct a representation is <i>O(k log (1/&delta;))</i>
+while the decoding time is <i>O(log(1/&delta;))</i>.
+We also present a second algorithm for pure &epsilon;-DP representations
+with the same error using space at most <i>k &epsilon; log(e)</i>
+bits, but requiring large decoding times.
+Our algorithms match the lower bounds on privacy-utility trade-offs (including constants but ignoring &delta; factors) and we also present a new space 
+lower bound matching our constructions up to small constant factors.
+To obtain our results, we design a new approach embedding sets into random linear systems
+deviating from most prior approaches that inject noise into non-private solutions.
+</div>
+
+<li>
 <i>Public-Key Anamorphism in (CCA-secure) Public-Key Encryption and Beyond</i>. 
 <a href=https://link.springer.com/chapter/10.1007/978-3-031-68379-4_13>CRYPTO 24</a>, 
 with Duong Hieu Phan and Moti Yung.
