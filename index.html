@@ -84,6 +84,15 @@ The contribution of this paper is two-fold. First we show that a refinement of t
 <br>
 We show concrete instantiations of the above methodology by giving efficient anamorphic versions of the Dual Regev scheme and of the Lindner-Peikert scheme. Technically, we first define a new problem, called randomness finding (RFinding), which requires that even if the adversary obtains the receiver’s secret key, then, while it can decrypt, it cannot fully recover the randomness from the ciphertext. Secondly, we reduce the standard LWE assumptions to the hardness of RFinding for both schemes. Notably, in both schemes we achieve public-key anamorphism utilizing the “trap- door techniques for lattices” introduced by Micciancio and Peikert [Eurocrypt 12].
 </div>
+<li>
+<i>Lower Bounds for PIR with Preprocessing from Blackbox Cryptography.</i>
+<a href=https://arxiv.org/abs/2607.06451>IEEE FOCS, 2026</a>
+with Alexander Hoover and Kevin Yeo.
+<br>
+[<a href="javascript:toggle('abstractfocs');">Show/Hide abstract</a>]
+<div class="abstract" id="abstractfocs" style="display:none;">
+Single-server private information retrieval (PIR) schemes are known to require linear query time. Recent works circumvent these classical lower bounds by leveraging preprocessing to answer queries in sublinear time. We prove computation lower bounds for PIR with preprocessing schemes making blackbox usage of any cryptography (such as random oracles or virtual blackbox obfuscation). If the client stores s bits about an n-bit database, then answering k=Ω(s) queries requires either Ω(n/s) amortized online communication or Ω(n/s) amortized server cryptographic operations. This is tight, as known constructions match either bound while outperforming the other. Our lower bound is unconditional and allows arbitrary query protocols, weakened privacy, and server-side database encodings (including doubly efficient PIR) whenever the encoding is independent of the blackbox cryptography. Previous bounds were only known conditionally and for restricted classes of preprocessing, e.g., under non-encoding assumptions. Our framework also yields Ω(n/s) communication lower bounds for schemes with o(n/s) server cryptographic operations, communication-determined server cryptography, or perfect privacy in the idealized model. Finally, we prove lower bounds for symmetric PIR with client preprocessing in the random oracle model and give a matching construction using only one-way functions in the online phase.
+</div>
 
 </ul>
 
