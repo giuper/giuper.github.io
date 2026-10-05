@@ -51,8 +51,7 @@ My main research area is Theoretical Computer Science with a special focus on Cr
 <li> 2026
 <ul>
 <li>
-<i>
-LatORAM: ORAMs from Lateral Stashes and Delayed Shuffling.</i>
+<i>LatORAM: ORAMs from Lateral Stashes and Delayed Shuffling.</i>
 <a href=https://eprint.iacr.org/2026/002>IEEE S&amp;P, 2026</a>
 pp. 1483--1502
 with Sarvar Patel, Joon Young Seo and Kevin Yeo.
@@ -64,6 +63,28 @@ We present two new constructions, LatORAM and Lat 2 ORAM, that simultaneously ob
 
 Of independent interest, we present improved oblivious merging schemes for specific settings important for our ORAMs. Our constructions solely rely on symmetric cryptography.
 </div>
+<li>
+<i>Least-Privilege Methodology for Anamorphic Encryption
+with Randomness-Recovery Trapdoors.</i>
+<a href=PDFs/ccs26.pdf>ACM CCS, 2026</a>
+with Xuan Thanh Do, Duong Hieu Phan and Moti Yung.
+<br>
+[<a href="javascript:toggle('abstractlp');">Show/Hide abstract</a>]
+<div class="abstract" id="abstractlp" style="display:none;">
+The Least Privilege Principle (the LP Principle) is a basic security
+design rule according to which every program and every user of the
+system should operate using the least set of privileges necessary to
+complete the job. This principle underlies (some-what implicitly) the concept of Public-Key Encryption in which the asymmetric nature of the keys, the public key pk and the secret key sk, allows a sender to encrypt a message but not to decrypt it. Contrast this with Private-Key Encryption in which the ability of sending an encrypted message comes with the ability of decrypting
+messages.
+<br>
+In this paper we look at the LP Principle in the context of Anamorphic Encryption (AE). AE provides a framework that establishes a secure communication channel even with respect to an adversary (the dictator) that receives pk and has the power to request sk. AE achieves this by introducing an additional pair (sdk, rdk) of covert keys. Then pk can be made public and sdk can be distributed to a trusted ring of users (the anamorphic senders) to be used to embed a second message (called anamorphic) into ciphertexts alongside the regular one. The anamorphic message can be extracted from the ciphertext using rdk by the anamorphic receiver. The existence of an anamorphic message is covert. At times, unfortunately, past AE breaks the LP Principle since the anamorphic sender in these constructions (e.g., some of those in [PoPETS 23]) possesses the privilege to also act as a regular message receiver. This break of the LP Principle, potentially reducing the privacy guaranty of the regular messages.
+<br>
+
+The contribution of this paper is two-fold. First we show that a refinement of the notion of AE (called public-key AE [CRYPTO 24]) is sufficient to achieve the LP Principle across all actors of AE and then we unveil a conceptually simple, yet general, new methodology that achieves anamorphism for two important cryptographic primitives (encryption and key-encapsulation) that respect the LP Principle. Our new methodology is based on the concept of Trapdoor-Aided Randomness Recovery by which one can generate special key pairs (pk, sk) that are still indistinguishable from regularly generated key pairs, but possess an associated trapdoor td that first allows randomness extraction from a ciphertext (and nothing more). Secondly, importantly, and differently from prior proposals, the new trapdoor is different from and computationally independent of “the decryption trapdoor key.” This methodology allows for a generic construction of Public-Key AE, where, to date, the single example known of public-key anamorphism relied on a specific CCA encryption scheme.
+<br>
+We show concrete instantiations of the above methodology by giving efficient anamorphic versions of the Dual Regev scheme and of the Lindner-Peikert scheme. Technically, we first define a new problem, called randomness finding (RFinding), which requires that even if the adversary obtains the receiver’s secret key, then, while it can decrypt, it cannot fully recover the randomness from the ciphertext. Secondly, we reduce the standard LWE assumptions to the hardness of RFinding for both schemes. Notably, in both schemes we achieve public-key anamorphism utilizing the “trap- door techniques for lattices” introduced by Micciancio and Peikert [Eurocrypt 12].
+</div>
+
 </ul>
 
 <li> 2025
